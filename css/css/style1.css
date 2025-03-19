@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+
+*, *::after, *::before {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+width: 100%;
+height: auto;
+font-family: 'Lora', serif;
+}
+html, body {
+height: 100%;
+
+}
+p.sierlijk {
+font-family: 'Lobster', cursive;
+}
+
+:root {
+--bg1: rgba(63, 94, 63, 1);
+--bg2: rgba(14, 15, 14, 1);
+--bg3: rgba(182, 223, 182, 1);
+--bg4: rgba(182, 187, 223, 1);
+--bg5: red;
+--bg6: white;
+}
+
+body {
+position: relative;
+box-sizing: border-box;
+width: 100%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCBmaWxsPSIjOWU5ZTllIiB3aWR0aD0iNSIgaGVpZ2h0PSI1IiAvPgo8cGF0aCBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSIgZD0iTSAwIDUgTCA1IDAgWiBNIDYgNCBMIDQgNiBaIE0gLTEgMSBMIDEgLTEgWiIgLz4KPC9zdmc+");
+}
+
+.svg {
+position: fixed;
+width: 100vw;
+top: 20vh;
+}
+
+.afstand {
+    height: 100px;
+}
+h1, h2,h3, h4, h5, p {
+    text-align: center;
+    font-weight: 700;
+}
+
+hr {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+}
+
+.container {
+    background-color: white;
+    height: auto;
+}
+.pagina {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 120px;
+    display: block;
+    margin: auto;
+    width: 600px;
+    border-bottom: solid 2px black;
+}
+
+p.plaats {
+    margin-left: 1.5em;
+}
+
+p.pagina {
+  position: relative;
+   text-align: end;
+}
+.pagina a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.pagina2 {
+    display: block;
+    margin: auto;
+    width: 600px;
+}
+
+.pagina5 img {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+hr {
+	background-color: black;
+	height: 2px;
+	width: 200px;
+	float: left;
+}
+hr.breed {
+    background-color: black;
+	height: 2px;
+}
+
+p.fonta {
+	font-size: 0,4em;
+	text-align: start;
+
+}
+
+
+    button {
+        position: fixed;
+        top: 200px;
+        left: 5px;
+        width: 100px;
+        padding: 10px;
+      
+      }
+  
+      .btn {
+        position: fixed;
+        text-align: center;
+        top: 150px;
+        left: 5px;
+        width: 100px;
+        padding: 10px;
+        background-color: blue;
+      }
+  
+      .btn a {
+        color: white;
+      }
+
+      p.font1 {
+        font-size: 1.2rem;
+        text-align: start;
+      }

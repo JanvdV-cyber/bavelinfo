@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&family=Luxurious+Roman&family=Montserrat+Alternates:wght@500&family=Montserrat:wght@600&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+html, body {
+    height: 100%;
+    
+}
+
+:root {
+  --bg1: rgba(63, 94, 63, 1);
+  --bg2: rgba(14, 15, 14, 1);
+  --bg3: rgba(182, 223, 182, 1);
+  --bg4: rgba(182, 187, 223, 1);
+  --bg5: red;
+  --bg6: white;
+}
+
+body {
+  position: relative;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCBmaWxsPSIjOWU5ZTllIiB3aWR0aD0iNSIgaGVpZ2h0PSI1IiAvPgo8cGF0aCBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSIgZD0iTSAwIDUgTCA1IDAgWiBNIDYgNCBMIDQgNiBaIE0gLTEgMSBMIDEgLTEgWiIgLz4KPC9zdmc+");
+}
+
+.svg {
+  position: fixed;
+  width: 100vw;
+  top: 20vh;
+}
+.container-fluid {
+position: relative;
+display: block;
+background-color: white;
+width: 90%; 
+max-width:1600px; 
+margin: 0 auto 300px auto; 
+z-index: 0;
+min-height: 300%;
+}
+
+.vakken {
+display: flex;
+}
+
+.headerb {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.rechtsboven {
+  grid-column: 2 / 5;
+  grid-row: 1 / 5;
+  align-content: space-around; 
+}
+
+
+.nav {
+  grid-column: 3 / 5;
+  grid-row: 5 / 6;
+}
+.fonta {
+font-size: 0.85em;
+text-align: center;
+}
+
+.font1, .font2, .font3 { 
+padding: 0; 
+margin: 0; 
+}
+.font1 {
+font-size: 1em;
+}
+.font1 img {
+z-index: 10;
+}
+.font2 {
+font-size: 1.6em;
+}
+.font3 {
+font-size: 1.5em;
+}
+.font4 {
+font-size: 1.0em;
+}
+
+
+/*Grote foto's op het scherm'*/
+.tussenvak {
+position: relative; 
+width: 100%; 
+height: auto; 
+margin: 80px 0 0 0; 
+}
+.foto1 { 
+position: absolute; 
+width: 550px; 
+height: 300px; 
+top: 80px; right: 20px; 
+z-index: 120; 
+background-color: rgba(255, 255, 255, .6); 
+color: blue; 
+border: solid 1px black; 
+border-radius: 10px; 
+transition: all 1s ease;
+box-shadow: 4px 4px 20px black;
+}
+.foto1:hover {
+opacity: 0;
+}
+.tekst1950 {
+padding: 10px 20px;
+}
+
+.foto img {
+position: relative; 
+width: 100%; 
+height: auto; 
+box-shadow: 4px 4px 20px black;
+}
+
+.vak {
+position: absolute; 
+display: block; 
+width: 500px; 
+height: 350px; 
+padding: 10px;
+border: solid 1px black; 
+border-radius: 10px; 
+background-color: rgba(255, 255, 255, .6);
+bottom: -230px; 
+right: 2%; 
+text-align: justify; 
+opacity: 1; 
+color: blue; 
+transition: all 1s ease; 
+}
+.vak:hover { 
+opacity: 0; 
+}
+.tekst { 
+position: absolute; 
+left: 140px; 
+padding: 30px 0 0 0; 
+color: blue; 
+border-bottom: solid 10px blue;
+}
+.tekst h2 {
+font-size: 50px; 
+font-weight: 900; 
+text-shadow: 3px 3px rgba(0, 0, 0, 0.6); 
+}
+/*boven de navigatie*/
+
+.hoofdboven {
+position: relative;
+display: block;
+width: 100%;
+height: 100px;
+}
+.but {
+display: flex;
+}
+.but .btn {
+width: auto;
+height: 40px;
+margin-top: 50px;
+
+}
+.innerfoto {
+width: 90%;
+margin: 10px 5%;
+}
+.innerfoto button{
+width: 90%;
+margin: 10px 5%;
+}
+
+
+.bg-color {
+background-color: rgba(80, 88, 114, 1);
+box-shadow: 5px 5px 2px black;
+}
+
+/*extra rijen*/
+
+.hoofdrij {
+    position: relative;
+width: 100%;
+display: flex;
+margin: 200px 20px;
+}
+
+.rij {
+padding: 2%;
+margin: 1% 0;
+box-shadow: 4px 4px 6px black;
+z-index: 0;
+}
+
+p.kopvak {
+text-align: center;
+margin-bottom: 20px;
+height: 100px;
+padding: 0 15px;
+line-height: 30px;
+background-color: lightgray;
+color: blue;
+text-decoration: none;
+border: solid 5px white;
+outline: solid 5px black;
+border-radius: 5px;
+font-weight: 700;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+p.kopvak2 {
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.bodyvak {
+padding: 10px 15px;
+}
+
+.nieuw img {
+position:absolute;
+top: -80px;
+left: 60%;
+width: 100px;
+}
+
+
+
+
+.extrainfo {
+position: relative;
+display: block;
+background-color: blue;
+top: 20px;
+width: 500px;
+padding: 10px 30px;
+border-radius: 7px;
+float: right;
+margin: 0 15px 60px 0;
+box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+}
+
+.extrainfo a {
+display: block;
+color: white;
+text-decoration: none;
+}
+
+.rechtervak {
+position: relative;
+width: auto;
+}
+
+.koprechts {
+width: 100%;
+height:auto;
+background-color: darkgray;
+padding: 10px 0;
+border-bottom: solid 5px #1AAB8A;
+margin-top: 20px;
+}
+.koprechts p {
+color: white;
+}
+.textrechts a button{
+background:#1AAB8A;
+color:#fff;
+border:none;
+position:relative;
+height:60px;
+font-size:1em;
+padding:0 2em;
+cursor:pointer;
+transition:800ms ease all;
+outline:none;
+}
+.textrechts a button:hover{
+background:#fff;
+color:#1AAB8A;
+}
+.textrechts a button:before,button:after{
+content:'';
+position:absolute;
+top:0;
+right:0;
+height:2px;
+width:0;
+background: #1AAB8A;
+transition:400ms ease all;
+}
+.textrechts a button:after{
+right:inherit;
+top:inherit;
+left:0;
+bottom:0;
+}
+.textrechts a button:hover:before,button:hover:after{ 
+  width:100%; 
+  transition:800ms ease all; 
+
+}
+
+.afstand {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
+
+button {
+      position: fixed;
+      top: 200px;
+      left: 5px;
+      width: 100px;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .btn {
+      position: fixed;
+      top: 150px;
+      left: 5px;
+      width: 100px;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .btn a {
+      color: white;
+    }
+    p.font3 {
+      display: block;
+      height: 60px;
+      margin-top: 30px;
+    }
+    .boventext, .boventextb {
+      display: block;
+      margin: 30px auto 0 auto;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      padding: 20px;
+
+}
+
+p.boventext {
+   padding: 30px 0;
+   width: 500px;
+  background-color: turquoise;
+  text-align: center;
+font-size: 1.5rem;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+border: solid 2px black;
+border-radius: 7px;
+}
+
+p.boventextb {
+  padding: 30px 0;
+  width: 500px;
+ background-color: rgb(37, 50, 228);
+ text-align: center;
+font-size: 1.5rem;
+color: white;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+border: solid 2px white;
+border-radius: 7px;
+}
+p.boventextb2 {
+  padding: 30px 0;
+ 
+ background-color: rgb(37, 50, 228);
+ text-align: center;
+font-size: 1.5rem;
+color: white;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+border: solid 2px white;
+border-radius: 7px;
+}

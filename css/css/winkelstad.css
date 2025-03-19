@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&family=Luxurious+Roman&family=Montserrat+Alternates:wght@500&family=Montserrat:wght@600&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+*, *::after, *::before {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+width: 100%;
+height: auto;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+}
+html, body {
+height: 100%;
+
+}
+
+
+p.sierlijk {
+font-family: 'Lobster', cursive;
+}
+
+:root {
+--bg1: rgba(63, 94, 63, 1);
+--bg2: rgba(14, 15, 14, 1);
+--bg3: rgba(182, 223, 182, 1);
+--bg4: rgba(182, 187, 223, 1);
+--bg5: rgba(255, 0, 0, 1);
+--bg6: rgba(255, 255, 255, 1);
+--bg7: rgba(8, 8, 250, 1);
+}
+a {
+  text-decoration: none;
+}
+ 
+button1 {
+    position: fixed;
+    clip-path: polygon(50% 0%, 100% 70%, 100% 100%, 51% 80%, 0 100%, 0 80%);
+    text-align: center;
+    top: 10em;
+    top: 200px;
+    left: 0.6em;
+    width: 100px;
+    height: 3em;
+    padding: 0.6em 1em 0.4em 1em;
+    border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    background-color: var(--bg4);
+    cursor: pointer;
+}
+
+  .btn1 {
+    position: fixed;
+    text-align: center;
+    top: 8em;
+    width: 6em;
+    padding: 0.4em 1em;
+    background-color: var(--bg7);
+    left: 0.6em;
+  }
+
+  .btn1 a {
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  .breed {
+    display: inline-block;
+  }
+  .foto {
+  position: relative;
+
+  }
+.foto p {
+  float: left;
+}
+
+.breedte img {
+width: 48%;
+}
+
+.btn {
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  text-align: start;
+  padding-left: 3em;
+  width: 400px;
+}
+
+p.boeken {
+  display: inline;
+  color: var(--bg4);
+  background-color: var(--bg3);
+  text-shadow: 2px 2px 2px var(--bg1);
+  box-shadow: 2px 2px 2px var(--bg6);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.art {
+  position: relative;
+  max-width: 420px;
+  border: solid 1px black;
+  height: 18em;
+ 
+}
+
+p.deel1 {
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+}
+p.deel2 {
+  position: absolute;
+  top: 1.6em;
+  left: 0;
+}
+p.deel3 {
+  position: absolute;
+  top: 5em;
+  left: 0.5em;
+}
+
+.afstand {
+  position: relative;
+  width: 100vw;
+  height: 100px;
+}
+
+
+.afstandk {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 20px;
+}
+
+.boerderijen {
+  /* display: block;
+  background: white; */
+
+padding: 20px;
+
+}
+
+.boerderijen img {
+
+  display: block;
+  width: 75%;
+  height: 100%;
+
+}

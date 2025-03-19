@@ -1,0 +1,9 @@
+.grid-item {
+    display: grid;
+    grid-template-columns: repeat (3, 300px);
+}
+
+
+.item1 img.fotos {
+    grid-column: 1 / 2;
+}

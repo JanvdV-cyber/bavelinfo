@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&family=Luxurious+Roman&family=Montserrat+Alternates:wght@500&family=Montserrat:wght@600&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+body {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCBmaWxsPSIjOWU5ZTllIiB3aWR0aD0iNSIgaGVpZ2h0PSI1IiAvPgo8cGF0aCBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSIgZD0iTSAwIDUgTCA1IDAgWiBNIDYgNCBMIDQgNiBaIE0gLTEgMSBMIDEgLTEgWiIgLz4KPC9zdmc+");
+}
+:root {
+--light: #fff;
+--blue: #6666CC;
+--grijs: #CCCCCC;
+--groen: green;
+}
+
+.svg {
+position: fixed;
+width: 100vw;
+top: 20vh;
+
+}
+p, h3 {
+    font-weight: 800;
+}
+
+.container-fluid {
+    position: relative;
+    display: block;
+    margin: auto;
+      width: 90%;
+    height: auto;
+    background-color: var(--light);
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+padding-bottom: 300px;
+}
+.artikelen {
+position: relative;
+width: 90%;
+height: auto;
+left: 5%;
+}
+
+p.font1 {
+    width: 100%;
+}
+
+p.font1::first-letter {
+    font-size: 1.6rem;
+}
+
+p.fotop {
+font-size: .8em;
+}
+
+.fotos {
+position: relative;
+display: flex;
+flex-wrap: wrap;
+height: auto;
+left: 5em;
+}
+
+.fotos {
+    display: flex;
+       margin: 2em;
+}
+
+.foto {
+    position: relative;
+    width: 45%;
+    max-width: 400px;
+    margin: 2em;
+}
+
+.foto img {
+    width: 100%;
+
+}
+h3 {
+    text-align: center;
+    
+}
+button.button1, .btn {
+    display: block;
+    z-index: 10;
+    width: 100px;
+    height: 40px;
+}
+
+button.button1 {
+    position: fixed;
+    top: 140px;
+background: var(--blue);
+color: var(--light);
+border: solid 2px var(--light);
+border-radius: 5px;
+
+}
+
+.btn {
+    position: fixed;
+    top: 100px;
+    background: var(--grijs);
+    }
+
+    .btn a {
+        color: var(--groen);
+          }

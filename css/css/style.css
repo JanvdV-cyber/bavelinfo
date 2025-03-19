@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playball&display=swap');
+
+*, *::after, *::before {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+width: 100%;
+height: auto;
+font-family: 'Lora', serif;
+}
+html, body {
+height: 100%;
+
+}
+p.sierlijk {
+font-family: 'Lobster', cursive;
+}
+
+:root {
+--bg1: rgba(63, 94, 63, 1);
+--bg2: rgba(14, 15, 14, 1);
+--bg3: rgba(182, 223, 182, 1);
+--bg4: rgba(182, 187, 223, 1);
+--bg5: red;
+--bg6: white;
+}
+
+body {
+position: relative;
+box-sizing: border-box;
+width: 100%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCBmaWxsPSIjOWU5ZTllIiB3aWR0aD0iNSIgaGVpZ2h0PSI1IiAvPgo8cGF0aCBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSIgZD0iTSAwIDUgTCA1IDAgWiBNIDYgNCBMIDQgNiBaIE0gLTEgMSBMIDEgLTEgWiIgLz4KPC9zdmc+");
+}
+
+.svg {
+position: fixed;
+width: 100vw;
+top: 20vh;
+}
+
+        .font1,
+        .font2,
+        .font3,
+        .font4 {
+            text-align: justify;
+        }
+        
+        .font1, .font1a {
+            position: relative;
+            font-size: 1.1em;
+            width: 100%;
+         
+        }
+        .font1a::first-letter {
+            font-size: 1.6rem;
+            float: left;
+        }
+        p.font1a {
+            position: relative;
+        }
+        p.font1a img {
+            float: left;
+        }
+        
+        .font2 {
+            font-size: 1.6em;
+        }
+        
+        .font3 {
+            font-size: 1.5em;
+        }
+        .font4 {
+            font-size: 0.8;
+            padding: 1em 1em 1em 0;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        }
+     .container-fluid, .container {
+        position: relative;
+        display: block;
+        width: 90%;
+        padding: 3%;
+        max-width: 1200px;
+        margin: 0 auto 100px auto;
+        background-color:white;
+        z-index: 0;
+    }
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+   .foto {
+        position: relative;
+        display: flex;
+        flex-direction: column;        
+         width: 40%;  
+         padding: 10px;  
+    }
+.foto img {
+    margin-top: 3em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.foto img:first-child {
+    margin-top: -10px;
+}
+
+    .hoeve {
+        position: relative;
+         left: 0;
+         top: 0;
+    }
+    .hoeve1 {
+  float: right;
+    }
+    .teksthoeve {
+       width: 60%;
+        float: right;
+    } 
+    .teksthoeve1 {
+        width: 60%;
+         float: left;
+     } 
+
+    .totaal {
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    .kader {
+        min-width: 30%;
+    }
+
+    .bovenfoto {
+        width: 50%;
+        margin: auto;
+    }
+
+    .kader  {
+        display: block;
+        width: 30%;
+        padding: 10px;
+    }
+
+    .kader p {
+
+    }
+    .knoppen {
+        z-index: 2;
+    }
+    
+    .knoppen .btn {
+        margin: 5px 0;
+    }
+    .knoppen .btn a {
+        color: white;
+    }
+    .knoppen .btn {
+        position: fixed;
+        top: 100px;
+        display: block;
+        width: 100px;
+        height: 40px;
+    }
+
+    .knoppen button {
+        position: fixed;
+        top: 150px;
+        display: block;
+        width: 100px;
+        height: 40px;
+    }
+ 
+    button {
+        position: fixed;
+        top: 200px;
+        left: 5px;
+        width: 100px;
+        padding: 10px;
+      
+      }
+  
+      .btn {
+        position: fixed;
+        text-align: center;
+        top: 20px;
+        left: 5px;
+        width: 100px;
+        padding: 10px;
+        background-color: blue;
+      }
+  
+      .btn a {
+        color: white;
+      }

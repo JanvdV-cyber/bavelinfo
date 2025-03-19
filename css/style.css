@@ -1,0 +1,234 @@
+html, body {
+height: 100%;
+
+}
+p.sierlijk {
+font-family: 'Lobster', cursive;
+}
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+--bg1: rgba(63, 94, 63, 1);
+--bg2: rgba(14, 15, 14, 1);
+--bg3: rgba(182, 223, 182, 1);
+--bg4: rgba(182, 187, 223, 1);
+--bg5: rgba(255, 0, 0, 1);
+--bg6: rgba(255, 255, 255, 1);
+  --white-color:                  rgba(255, 255, 255, 1);
+  --primary-color:                rgba(91, 193, 172, 1);
+  --secondary-color:              rgba(90, 111, 128, 1);
+  --section-bg-color:             rgba(240, 248, 255, 1);
+  --site-footer-bg-color:         rgba(68, 82, 93, 1);
+  --custom-btn-bg-color:          rgba(89, 112, 129, 1);
+  --custom-btn-bg-hover-color:    rgba(91, 193, 172, 1);
+  --dark-color:                   rgba(0, 0, 0, 1);
+  --p-color:                      rgba(113, 114, 117, 1);
+  --border-color:                 rgba(233, 234, 235, 1);
+
+  --boxshadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+--textshadow:  4px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.card-header, .card-header a  {
+padding: 10px 0 0 ;
+margin: 0;
+}
+
+/* section.bron, section.nieuw {
+  border-top: solid 3em var(--secondary-color);
+} */
+.art {
+  position: relative;
+  padding: 1em 0; 
+ }
+
+
+
+
+.bron {
+  outline: solid 10px var(--secondary-color);
+  background: repeating-linear-gradient(180deg, var(--border-color) 0%, var(--secondary-color) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+  border-bottom: solid 5px transparent;
+   border-top: solid 20px transparent;
+   box-shadow: 10px 10px 110px black;
+}
+
+a.top {
+  position: fixed;  
+  z-index: 1;
+  top: 10em;
+  left: 1em;
+  width: 7em;
+  height: 3em;
+  color: var(--white-color);
+  text-decoration: none;
+  line-height: 2.5em;
+  border: solid 3px var(--white-color);
+  outline: solid 3px var(--custom-btn-bg-color);
+  border-radius: 0.4em;
+  background-color: var(--custom-btn-bg-color);
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+}
+
+.hero-section {
+  box-shadow: var(--boxshadow);
+}
+
+h3 {
+  text-shadow: var(--textshadow);
+}
+
+h3.boven1 {
+  background-color: var(--custom-btn-bg-color);
+  padding: 0.6em;
+  box-shadow: var(--boxshadow);
+}
+
+h3.boven2 {
+  background-color: var(--section-bg-color);
+  padding: 0.6em;
+  box-shadow: var(--boxshadow);
+}
+
+
+/* titels  */
+.bovenVak {
+    position: relative;
+    height: 100%;
+    top: 1em;
+    bottom: 1em;
+}
+
+.titel h3 {
+  display: inline; 
+  padding: 0.3em 1em;
+   background-color: var(--site-footer-bg-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--boxshadow);
+  opacity: 1;
+}
+
+
+.titel1 h3 {
+  position: relative;
+  display: inline;
+  top: 1em;
+  padding: 0.3em 1em;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--boxshadow);
+}
+
+.titel2 h3 {
+  position: relative;
+  display: inline;
+  top: 1em;
+  padding: 0.3em 1em;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--boxshadow);
+  text-shadow: var(--textshadow);
+
+}
+
+
+.btn {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+  width: 18em;
+
+}
+
+button.top {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 5em;
+  padding: 0.3em;
+  top: 10em;
+}
+
+
+header.site-header {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+
+span.boekenknop {
+  font-size: 0.6rem;
+}
+/* einde Kaarten */
+
+@media screen and (max-width: 1400px) {
+   .btn {
+    width: 12em;
+   }
+
+}
+
+@media screen and (max-width: 1200px) {
+  section.hero-section {
+    display: none;
+  }
+
+  .gradient {
+    grid-template-columns: 300px 300px;
+  }
+
+  .gradient img:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .btn {
+   width: 8em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .titel {
+    display: none;
+  }
+
+  .gradient {
+    display: none;
+  }
+}
+
+
+
+h3.boven {
+   background-color: var(--primary-color);
+  padding: 0.6em;
+  box-shadow: var(--boxshadow);  
+  opacity: 1;
+}
+
+li.nav-item {
+  width: 100%;
+}
+

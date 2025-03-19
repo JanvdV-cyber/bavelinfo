@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: 'Lora', serif;
+}
+html, body {
+    height: 100%;
+    
+}
+
+:root {
+  --bg1: rgba(63, 94, 63, 1);
+  --bg2: rgba(14, 15, 14, 1);
+  --bg3: rgba(182, 223, 182, 1);
+  --bg4: rgba(182, 187, 223, 1);
+  --bg5: red;
+  --bg6: white;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCBmaWxsPSIjOWU5ZTllIiB3aWR0aD0iNSIgaGVpZ2h0PSI1IiAvPgo8cGF0aCBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSIgZD0iTSAwIDUgTCA1IDAgWiBNIDYgNCBMIDQgNiBaIE0gLTEgMSBMIDEgLTEgWiIgLz4KPC9zdmc+");
+}
+
+.svg {
+  position: fixed;
+  width: 100vw;
+  top: 20vh;
+}
+
+.container {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0 10%;
+}
+.container img {
+  display: block;
+  margin: auto;
+}
+
+p.font1 {
+  display: block;
+    font-size: 1.2em;
+   }
+
+   p.font1a {
+    font-size: 1.2em;
+   }
+
+p.font1a::first-letter {
+    font-size: 1.8em;
+   }
+
+p.font1b {
+font-size: 1.2rem;
+padding: 0 2em;
+
+}
+
+p.font1br {
+  font-size: 1.2rem;
+  padding: 0 2em;
+  text-align: right;
+  }
+
+  p.font1c {
+    position: relative;
+    left: 5%;
+    font-size: 1.2em;
+  }
+
+  p.font1c::first-letter {
+    position: relative;
+    left: -5%;
+    font-size: 1.2em;
+  }
+
+  p.font1h {
+      font-size: 1.4rem;
+    font-weight: bolder;
+  }
+
+  p.font1l2 {   
+    font-size: 1.2em;
+  }
+
+p.font1l {
+  margin-left:10em;
+  font-size: 1.2rem;
+}
+
+.foto {
+  position: relative;
+  }
+.foto img {
+  margin-left: 20px;
+}
+
+p.font1a img {
+  float: left;
+  margin: 1em 1em 1em 0;
+}
+/* 1941 geschiedenis der gemeente .. */
+
+.streep {
+  width: 80%;
+  background-color: black;
+  height: 2px;
+}
+.streepje {
+  width: 10em;
+  height: 1px;
+  background-color: black;
+}
+ .afstand {
+  height: 200px;
+ }
+
+ tr {
+  width: 90%;
+ }
+ td {
+  width: 20%;
+ }
+/* Einde 1941 geschiedenis der gemeente .. */
