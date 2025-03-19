@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CENTRUM BREDA</title>
+<link href="../../css/jquery.fancybox.min.css" rel="stylesheet" />
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+<div class="knop"><a href="javascript:javascript:history.go(-1)">HOME</a></div>
+<button class="top" onclick=" topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<div class="btn-group d-flex flex-wrap d-inline-flex p-3 bg-secondary text-white">
+  <a href="centrum/binnenstad.html"><button type="button" class="btn btn-primary m-1">Binnenstad</button></a>
+  <a href="centrum/boschstraat.html"><button type="button" class="btn btn-primary m-1">Boschstraat</button></a>
+  <a href="centrum/groteMarkt.html"><button type="button" class="btn btn-primary m-1">Grote Markt</button></a>
+  <a href="centrum/haven.html"><button type="button" class="btn btn-primary m-1">De Haven</button></a>
+  <a href="centrum/havermarkt.html"><button type="button" class="btn btn-primary m-1">Havermarkt</button></a>    
+  <a href="centrum/hoge-tolbrug.html"><button type="button" class="btn btn-primary m-1">Hoge brug of Tolbrug</button></a> 
+  <a href="centrum/houtmarkt.html"><button type="button" class="btn btn-primary m-1">Houtmarkt</button></a>
+  <a href="centrum/keizerstraat.html"><button type="button" class="btn btn-primary m-1">Keizerstraat</button></a>
+  <a href="centrum/kerken.html"><button type="button" class="btn btn-primary m-1">Kerken in Breda</button></a>
+  <a href="centrum/kloosterplein.html"><button type="button" class="btn btn-primary m-1">Kloosterplein</button></a>
+  <a href="centrum/oudevest.html"><button type="button" class="btn btn-primary m-1">Oude Vest</button></a>      
+  <a href="centrum/singels.html"><button type="button" class="btn btn-primary m-1">De Singels</button></a>
+  <a href="centrum/turfschip.html"><button type="button" class="btn btn-primary m-1">Het Turfschip (Chasseveld)</button></a>
+  <a href="centrum/vcoothplein.html"><button type="button" class="btn btn-primary m-1">Van Coothplein</button></a>
+  <a href="centrum/vd.html"><button type="button" class="btn btn-primary m-1">Vroom en Dreesman (V&D)</button></a>      
+  <a href="centrum/wilhelminasingel.html"><button type="button" class="btn btn-primary m-1">Wilhelminasingel</button></a>
+</div>
+
+<h3 class="naam">CENTRUM BREDA</h3>
+
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../images/breda/centrum/hoofdpagina/1954.png" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../../images/breda/centrum/hoofdpagina/1 1915 nieuwbouw hoge brug naar havermarkt.jpg" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../../images/breda/centrum/hoofdpagina/Jan van Haasteren puzzel1.png" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+</div>
+
+
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+  scrollFunction()
+  };
+  function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  document.getElementById("myBtn").style.display = "block";
+  } else {
+  document.getElementById("myBtn").style.display = "none";
+  }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  }
+  </script> 
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../../js/jquery.fancybox.min.js"></script>
+</body>
+</html>

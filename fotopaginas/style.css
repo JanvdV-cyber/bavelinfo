@@ -1,0 +1,112 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+:root {
+	--licht: white;
+	--donker: rgb(4, 28, 65);
+	--midden:  rgba(52, 57, 63, 1);
+	--gras: rgba(100, 130, 30, 1);
+	--blue: rgba(0, 170, 210, 1);
+  }
+  
+
+body {
+	background: #fff;
+	font-family: Trebuchet Ms;
+     height: 100%;
+	 width: 100%; 
+	 background-color: #333; 
+	 color: grey;
+	} 
+.container-fluid {
+    position: relative;
+    width: 90%;
+	 background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+	 max-width: 1600px;
+}
+
+.grid-container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	column-count: 5;
+	margin: 0 auto;
+	padding-right: 0.8em;
+}
+
+.grid-item {
+	display: flex;
+	margin: auto;
+	max-width: 400px;
+	height: 100%;
+}
+
+.grid-item img {
+	position: relative;
+	box-shadow: 8px 8px 8px var(--donker);
+	max-width: 100%;
+	height: auto;
+	margin: 0.5em;
+}
+
+.grid-item title {
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	right: 0;
+}
+
+h3.naam {
+	width: 100%;
+	text-align: center;
+	padding: 1.3em 0 0 0;
+	border-bottom: solid 2px var(--donker);
+	
+}
+
+.knop {
+	position: fixed;
+	top: 3em;
+	left: 1%;
+	width: 70px;
+    height: 40px;
+	background-color: blue;
+	text-align: center;
+	padding: 10px;
+}
+
+.knop a {
+	color: white;
+	font-size: 1.2rem;
+	
+}
+button.top {
+position: fixed;
+top: 7em;
+left: 1%;
+width: 70px;
+height: 40px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.grid-container {
+		column-count: 4;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.grid-container {
+		column-count: 3;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.grid-container {
+		column-count: 2;
+	}
+}
