@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playball&display=swap');
+
+*, *::after, *::before {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+width: 100%;
+height: auto;
+font-family: 'Lora', serif;
+}
+html, body {
+height: 100%;
+
+}
+p.sierlijk {
+font-family: 'Lobster', cursive;
+}
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+--bg1: rgba(63, 94, 63, 1);
+--bg2: rgba(14, 15, 14, 1);
+--bg3: rgba(182, 223, 182, 1);
+--bg4: rgba(182, 187, 223, 1);
+--bg5: rgba(255, 0, 0, 1);
+--bg6: rgba(255, 255, 255, 1);
+  --white-color:                  rgba(255, 255, 255, 1);
+  --primary-color:                rgba(91, 193, 172, 1);
+  --secondary-color:              rgba(90, 111, 128, 1);
+  --section-bg-color:             rgba(240, 248, 255, 1);
+  --site-footer-bg-color:         rgba(68, 82, 93, 1);
+  --custom-btn-bg-color:          rgba(89, 112, 129, 1);
+  --custom-btn-bg-hover-color:    rgba(91, 193, 172, 1);
+  --dark-color:                   rgba(0, 0, 0, 1);
+  --p-color:                      rgba(113, 114, 117, 1);
+  --border-color:                 rgba(233, 234, 235, 1);
+
+  --boxshadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+--textshadow:  4px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.card-header, .card-header a  {
+padding: 10px 0 0 ;
+margin: 0;
+}
+
+/* section.bron, section.nieuw {
+  border-top: solid 3em var(--secondary-color);
+} */
+.art {
+  position: relative;
+  padding: 1em 0; 
+ }
+
+.art img {
+  width: auto;
+  height: 100%;
+}
+
+.art a {
+position: absolute;
+left: 4em;
+top: 48%;
+width: 22em;
+background-color: var(--bg2);
+color: var(--bg6);
+padding: 0.5em;
+
+border: solid 0.3em var(--bg6);
+outline: solid 0.3em var(--bg3);
+border-radius: 0.5em;
+opacity: 0;
+transition: 0.6s ease-in;
+}
+
+.art:hover  a.alink {
+  opacity: 100;
+   
+}
+
+section.nieuw {
+  outline: solid 10px rgba(91, 193, 172, 0.5);
+  background: repeating-linear-gradient(180deg, rgba(91, 193, 172, 0.5) 0%, rgba(233, 234, 235, 1) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+  border-bottom: solid 5px transparent;
+   border-top: solid 20px transparent;
+   box-shadow: 10px 10px 110px black;
+}
+
+section.bron {
+  outline: solid 10px var(--secondary-color);
+  background: repeating-linear-gradient(180deg, var(--border-color) 0%, var(--secondary-color) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+  border-bottom: solid 5px transparent;
+   border-top: solid 20px transparent;
+   box-shadow: 10px 10px 110px black;
+}
+
+header.site-header {
+  position: relative;
+  z-index: 10;
+}
+a.top {
+  position: fixed;  
+  z-index: 1;
+  top: 10em;
+  left: 1em;
+  width: 7em;
+  height: 3em;
+  color: var(--white-color);
+  text-decoration: none;
+  line-height: 2.5em;
+  border: solid 3px var(--white-color);
+  outline: solid 3px var(--custom-btn-bg-color);
+  border-radius: 0.4em;
+  background-color: var(--custom-btn-bg-color);
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+}
+
+.hero-section {
+  box-shadow: var(--boxshadow);
+}
+
+h3 {
+  text-shadow: var(--textshadow);
+}
+
+h3.boven1 {
+  background-color: var(--custom-btn-bg-color);
+  padding: 0.6em;
+  box-shadow: var(--boxshadow);
+}
+
+h3.boven2 {
+  background-color: var(--section-bg-color);
+  padding: 0.6em;
+  box-shadow: var(--boxshadow);
+}
+
+section.section {
+  position: relative;
+  height: auto;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.bovenVak {
+    position: relative;
+    height: 100%;
+    top: 1em;
+    bottom: 1em;
+}
+
+.titel h3 {
+  display: inline; 
+  padding: 0.3em 1em;
+   background-color: var(--site-footer-bg-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--boxshadow);
+  opacity: 1;
+}
+
+
+.titel1 h3 {
+  position: relative;
+  display: inline;
+  top: 1em;
+  padding: 0.3em 1em;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--boxshadow);
+}
+
+.titel2 h3 {
+  position: relative;
+  display: inline;
+  top: 1em;
+  padding: 0.3em 1em;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--boxshadow);
+  text-shadow: var(--textshadow);
+
+}
+
+
+.btn {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+  width: 18em;
+
+}
+
+button.top {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 5em;
+  padding: 0.3em;
+  top: 10em;
+}
+
+.artikel {
+  text-transform: uppercase;
+  background-color: var(--secondary-color);
+  margin: 0.3em;
+  color: var(--white-color);
+}
+
+.artikel1 {
+  text-transform: uppercase;
+  background-color: var(--custom-btn-bg-hover-color);
+  margin: 0.3em;
+  color: var(--white-color);
+}
+
+/* kaarten */
+.artikel2 {
+  text-transform: uppercase;
+background-color: var(--p-color);
+color: var(--white-color);
+}
+.artikel2a {
+  background-color: var(--custom-btn-bg-color);
+  color: var(--white-color);
+
+}
+
+.artikel3 {
+  text-transform: uppercase;
+}
+.col-md-6 {
+  position: relative;
+}
+p.mail {
+  position: absolute;
+  left: 0;
+}
+.mail a
+{
+  position: absolute;
+  left: 25px;
+}
+h5.tweede {
+   border-bottom: solid 5px var(--bg1);
+}
+
+.section1 {
+  background: linear-gradient(285deg, rgba(236, 252, 255, 0.5) 0%, rgba(235, 252, 255, 0.5) 40%, rgba(178, 252, 255, 0.5) calc(40% + 1px), rgba(178, 252, 255) 60%, rgba(94, 223, 255, 0.5) calc(60% + 1px), rgba(94, 223, 255, 0.5) 72%, rgba(62, 100, 255, 0.5) calc(72% + 1px), rgba(62, 100, 255, 0.5) 100%);
+}
+
+.section2 {
+  background: linear-gradient(288deg, rgba(255, 182, 185, 0.5) 0%, rgba(255, 182, 185, 0.5) 35%, rgba(250, 227, 217, 0.5) calc(35% + 1px), rgba(250, 227, 217, 0.5) 45%, rgba(187, 222, 214, 0.5) calc(45% + 1px), rgba(187, 222, 214, 0.5) 65%, rgba(97, 192, 191, 0.5) calc(65% + 1px), rgba(97, 192, 191, 0.5) 100%);
+}
+
+.section3 {
+  background: linear-gradient(285deg, rgba(199, 245, 254, 0.5) 10%, rgba(199, 245, 254, 0.5) 40%, rgba(252, 202, 248, 0.5) 40%, rgba(252, 200, 248, 0.5) 60%, rgba(234, 180, 248, 0.5) 60%, rgba(235, 180, 248, 0.5) 65%, rgba(243, 247, 152, 0.5) 65%, rgba(242, 247, 151, 0.5) 90%);
+} 
+
+.section3 .card {
+  background-color: transparent;
+}
+.section4 {
+  background: linear-gradient(285deg, rgba(236, 252, 255, 0.5) 0%, rgba(236, 252, 255, 0.5) 40%, rgba(178, 252, 255, 0.5) calc(40% + 1px), rgba(178, 252, 255, 0.5) 60%, rgba(94, 223, 255, 0.5) calc(60% + 1px), rgba(94, 223, 255, 0.5) 72%, rgba(62, 100, 255, 0.3) calc(72% + 1px), rgba(62, 100, 255, 0.3) 100%);
+}
+
+
+.section5 {
+  background: linear-gradient(288deg, rgba(255, 182, 185, 0.5) 0%, rgba(255, 182, 185, 0.5) 35%, rgba(250, 227, 217, 0.5) calc(35% + 1px), rgba(250, 227, 217, 0.5) 45%, rgba(187, 222, 214, 0.5) calc(45% + 1px), rgba(187, 222, 214, 0.5) 65%, rgba(97, 192, 191, 0.5) calc(65% + 1px), rgba(97, 192, 191, 0.5) 100%);
+}
+
+.gradient {
+    position: relative;
+    display: grid;
+    gap: 12%;
+    grid-template-columns: 300px 300px 300px;
+  width: 100%;
+  height: 20em;
+  place-content: center;
+}
+
+.gradient img {
+ position: relative;
+ width: 100%;
+ border: solid 0.5em transparent;
+ outline: solid 0.3em var(--p-color);
+ border-radius: 6px;
+ -webkit-border-radius: 6px;
+ -moz-border-radius: 6px;
+ -ms-border-radius: 6px;
+ -o-border-radius: 6px;
+ box-shadow: 6px 6px 16px black;
+}
+
+
+.gradient1 {  
+  background: repeating-linear-gradient(180deg, rgba(113, 114, 117, 0.4) 0%, var(--bg3) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+ border-bottom: solid 5px transparent;
+  border-top: solid 20px transparent;
+  box-shadow: 10px 10px 110px black;
+  outline: solid 10px var(--bg3);
+  margin-top: 100px;
+ }
+
+.gradient2 {
+  outline: solid 10px var(--secondary-color);
+  background: repeating-linear-gradient(180deg, var(--border-color) 0%, var(--secondary-color) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+  border-bottom: solid 5px transparent;
+   border-top: solid 20px transparent;
+   box-shadow: 10px 10px 110px black;
+}
+
+.gradient3 {
+  outline: solid 10px rgba(91, 193, 172, 0.5);
+  background: repeating-linear-gradient(180deg, rgba(91, 193, 172, 0.5) 0%, rgba(233, 234, 235, 1) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+  border-bottom: solid 5px transparent;
+   border-top: solid 20px transparent;
+   box-shadow: 10px 10px 110px black;
+}
+
+.gradient4 {
+  outline: solid 10px rgba(63, 94, 63, 0.9);
+  background: repeating-linear-gradient(180deg, rgba(182, 223, 182, 0.5) 0%, rgba(63, 94, 63, 0.9) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+  border-bottom: solid 5px transparent;
+   border-top: solid 20px transparent;
+   box-shadow: 10px 10px 110px black;
+}
+
+
+.gradient5 {
+  outline: solid 10px var(--secondary-color);
+  background: repeating-linear-gradient(180deg, var(--border-color) 0%, var(--secondary-color) 100%); background-repeat: repeat-x; background-position: 0% 0%; background-size: 100% 100%;
+  border-bottom: solid 5px transparent;
+   border-top: solid 20px transparent;
+   box-shadow: 10px 10px 110px black;
+}
+
+span.boekenknop {
+  font-size: 0.6rem;
+}
+/* einde Kaarten */
+
+@media screen and (max-width: 1400px) {
+   .btn {
+    width: 12em;
+   }
+
+}
+
+@media screen and (max-width: 1200px) {
+  section.hero-section {
+    display: none;
+  }
+
+  .gradient {
+    grid-template-columns: 300px 300px;
+  }
+
+  .gradient img:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .btn {
+   width: 8em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .titel {
+    display: none;
+  }
+
+  .gradient {
+    display: none;
+  }
+}
+
+
+
+h3.boven {
+   background-color: var(--primary-color);
+  padding: 0.6em;
+  box-shadow: var(--boxshadow);  
+  opacity: 1;
+}
+
